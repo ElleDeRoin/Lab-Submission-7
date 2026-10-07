@@ -4,7 +4,7 @@ using System.Runtime.InteropServices;
 public class NativeDLL : MonoBehaviour
 {
 
-    [DllImport("NativeDLL", EntryPoint = "Sort")]
+    [DllImport("NativePluginLab", EntryPoint = "Sort")]
     public static extern void Sort(int[] a, int length);
 
     public int[] a;
@@ -13,4 +13,5 @@ public class NativeDLL : MonoBehaviour
     {
         Sort(a, a.Length);
     }
+
 }
